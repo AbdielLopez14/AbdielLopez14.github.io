@@ -1,0 +1,20 @@
+css:
+body {
+    transition: background-image 2s ease;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+js:
+window.addEventListener('DOMContentLoaded', function() {
+  var imagenes = ['style/img/f1.2.png', 'style/img/f2.2.png', 'style/img/f3.2.png']; // Lista de rutas de imágenes
+  var duracion = 5000; // Duración en milisegundos entre cambios de imagen
+
+  function cambiarImagen() {
+    var indice = Math.floor(Math.random() * imagenes.length);
+    var imagenURL = 'url(' + imagenes[indice] + ')';
+    document.body.style.backgroundImage = imagenURL;
+  }
+
+  setInterval(cambiarImagen, duracion);
+});

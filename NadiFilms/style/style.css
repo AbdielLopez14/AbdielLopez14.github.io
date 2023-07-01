@@ -1,0 +1,274 @@
+/*Header*/
+
+#logo{
+    float: right;
+}
+
+/*Header*/
+
+/*Header*/
+
+footer{
+    text-align: center;
+}
+
+/*Header*/
+
+body{
+    background: linear-gradient(#4C0027, #B3541E)
+}
+
+/*Carrusel*/
+  
+.slide {
+    margin-top: 26px;
+margin-left: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    
+    height: calc( 600px + 3em);
+    border-radius: 5px;
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.slide-control {
+    background: #4c00275e;
+    border-radius: 50%;
+    color: #f85b00;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide-circulo {
+    color: #4C0027;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.slide-circulo:hover { 
+    color: #4C0027;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #B3541E;
+}
+
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+}
+/*Carrusel*/
+
+/*recomendación boton*/
+  
+#recomen{
+   
+    display: block;
+    padding: 0.5rem 1rem;
+    width: 200px;
+    margin: 0 auto;
+
+}
+
+.recomenbu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*recomendación boton*/
+
+
+/*Tabla de películas*/
+
+#titcar{
+    float: left;
+    margin-left: 30px;
+    font-family: sans-serif;
+   
+    color: rgb(255, 255, 255);
+   font-size: 50px;
+}
+
+.filmtitle{
+    
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    
+}
+
+.cartelera{
+    width: 275px;
+    height: 400px;
+    border-radius: 4px;
+}
+.cartelera:hover{
+    transition: transform 1s;
+    transform: scale(1.1);
+      opacity: .6 ;
+ }
+
+
+
+th, td{
+    text-align: center;
+    padding: 20px;
+}
+
+.filmtable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+table{
+    border-color: rgb(31, 0, 51);
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Tabla de películas*/
+
+/*Película*/
+
+
+.filmimg{
+    border-radius: 4px;
+    width: 20%;
+    height: 20%;
+    padding: 25px;
+    
+}
+
+.filmpagetitle{
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.filmsip{
+    color: white;
+    margin-left: 40px;
+    margin-right: 100px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+  
+}
+
+.linkscla{
+    text-decoration: none;
+}
+
+.container {
+    overflow: auto;
+    margin-top: 50px;
+  }
+
+  .nfilms{
+    margin-top: 40px;
+    width: 1000px;
+    height: 620px;
+
+}
+
+.nfilmsd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Película*/
